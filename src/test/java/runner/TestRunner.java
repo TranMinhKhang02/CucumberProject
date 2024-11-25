@@ -8,11 +8,15 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/java/features",
         glue = {"utility", "stepDefinition"},
         plugin = {"pretty",
-                "html:Reports/HTMLReports/cucumber-html-report",
+                "html:Reports/HTMLReports/cucumber.html",
                 "json:Reports/JSONReports/cucumber.json",
-                "junit:Reports/JUNitReports/cucumber.xml"
-        },
-        monochrome = true
+                "junit:Reports/JUNitReports/cucumber.xml",
+                "summary"
+        }/*,
+        monochrome = true,
+        dryRun = false,
+        strict = true*/
 )
 public class TestRunner {
+
 }
