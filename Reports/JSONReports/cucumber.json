@@ -1,0 +1,72 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-25T02:36:15.515Z",
+        "line": 5,
+        "name": "Test the valid login",
+        "description": "",
+        "id": "test-the-login-functionality-of-orangehrm;test-the-valid-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16662542900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on loginPage",
+            "match": {
+              "location": "stepDefinition.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2133752400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "stepDefinition.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1085761400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on login button",
+            "match": {
+              "location": "stepDefinition.LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1191128600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should land on home page",
+            "match": {
+              "location": "stepDefinition.LoginSteps.user_should_land_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test the login functionality of OrangeHRM",
+    "description": "",
+    "id": "test-the-login-functionality-of-orangehrm",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/loginFeature.feature",
+    "tags": []
+  }
+]
