@@ -13,8 +13,11 @@ Feature: Test the login functionality of OrangeHRM
     When user enters <username> and <password>
     And click on login button
     Then user should land on home page
+    # Test push to git
 
     Examples:
       | username | password  |
       | Admin    | admin123  |
       | Admin1   | admin1234 |
+      | Admin2   | admin1235 |
+      | Admin3   | admin1236 |
