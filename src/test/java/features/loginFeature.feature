@@ -16,8 +16,8 @@ Feature: Test the login functionality of OrangeHRM
     # Test push to git
 
     Examples:
-      | username | password  |
-      | Admin    | admin123  |
-      | Admin1   | admin1234 |
-      | Admin2   | admin1235 |
-      | Admin3   | admin1236 |
+      | username | password |
+      | Admin    | admin123 |
+      | Admin1   | admin123 |
+      |          |          |
+      |          |          |
