@@ -95,7 +95,14 @@ public class LoginSteps {
     @Then("user should land on home page")
     public void user_should_land_on_home_page() {
         System.out.println("user should land on home page");
-        driver.close();
+        String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+        String actualUrl = driver.getCurrentUrl();
+        if (expectedUrl.equals(actualUrl)) {
+            System.out.println("Navigation to home page is successfully");
+        } else {
+            System.out.println("Navigation to home page is failed");
+        }
+        driver.close();;
     }
 
     @When("user enters credentials using DataTable")

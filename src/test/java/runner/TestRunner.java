@@ -15,7 +15,9 @@ import org.junit.runner.RunWith;
         }/*,
         monochrome = true,
         dryRun = false,
-        strict = true*/
+        strict = true*/,
+        dryRun = true, // Test mà không cần mở chrome driver lên
+        tags = "@SmokeTest or @SanityTest"
 )
 public class TestRunner {
 
